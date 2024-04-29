@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <container>
   <nav>
     <div class="nav-up">
       <div class="nav-up-left">
@@ -25,23 +24,27 @@
       
     </div>
     <div class="nav-down">
-      <div class="icon">icon</div>
+      <div class="center">
+      <i class="fa-solid fa-house icon"></i>
       <div class="search-bar">
-        <i class="fas fa-search"></i>
         <input type="text" placeholder="Search...">
+        <div class="box">
+          <i class="fas fa-search"></i>
+        </div>
       </div>
+    </div>
     </div>
   </nav>
   <main></main>
   <footer></footer>
- </container>
 </template>
 
 
 
 <style lang="scss" scoped>
-nav{
 
+
+nav{
   .nav-up{
      display: flex;
      justify-content: space-around;
@@ -69,6 +72,57 @@ nav{
   width: 100%;
   height: 134px;
   background: #c00909;
+  display: flex;
+  align-items: center;
+  
+  .center{
+    width: 1240rem;
+  height: 134px;
+    display: flex;
+  align-items: center;
+  gap: 60px;
+
+  .icon{
+     font-size: 30px;
+     color: white;
+     margin-left: 250px;
+  }
+  .search-bar{
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     width: 540px;
+     background-color: white;
+     height: 45px;
+     &:hover{
+      cursor: text;
+     }
+    input{
+      width: 500px;
+      height: 30px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      background: white;    
+      outline: none;
+    }
+    .box{
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 5px; 
+      background: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        
+      }
+    }
+  }
 }
 }
+}
+
 </style>
