@@ -8,9 +8,12 @@
       <div class="nav-up-left">
         <div>比比昂日本購物</div>
         <div>泰國購物</div>
+        
         <div>
-         綜合服務
+         <span>綜合服務</span>
+         <i class="fa-solid fa-arrow-down"></i>
         </div>  
+
       </div>
       <div class="nav-up-right">
         <div>最近看過</div>
@@ -32,6 +35,9 @@
           <i class="fas fa-search"></i>
         </div>
       </div>
+    </div>
+    <div class="center-down">
+      <div></div>
     </div>
     </div>
   </nav>
